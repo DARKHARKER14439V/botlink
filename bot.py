@@ -1,7 +1,7 @@
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-import os
 TOKEN = os.getenv("BOT_TOKEN")
 
 # 📩 Start command
@@ -30,3 +30,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+

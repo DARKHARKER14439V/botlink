@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-# 🔑 Paste your bot token here
-TOKEN = "8653995384:AAEA9FHpi7viL-TMqy7KiGQZ1PslvKuZH4M"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 # 📩 Start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -28,4 +28,5 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
+
     main()
